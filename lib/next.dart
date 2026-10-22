@@ -117,10 +117,10 @@ class _NextState extends State<Next> {
                   ),
                 ),
                 SizedBox(height: 40),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: 40,
-                  decoration: BoxDecoration(),
+
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
