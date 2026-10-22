@@ -270,14 +270,24 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Next()),
-                    );
-                  },
-                  child: Text("Go to next"),
+                SizedBox(height: 40),
+                Container(
+                  height: 50,
+                  width: double.infinity,
+                  decoration: BoxDecoration(color: Colors.blue),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Next()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.blue,
+                    ),
+                    child: Text("Go to next"),
+                  ),
                 ),
               ],
             ),
