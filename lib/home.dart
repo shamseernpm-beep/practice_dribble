@@ -13,7 +13,10 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.arrow_back_ios),
-        title: Text("Add money"),
+        title: Text(
+          "Add money",
+          style: TextStyle(fontWeight: FontWeight(700), color: Colors.black),
+        ),
         centerTitle: true,
       ),
     );
