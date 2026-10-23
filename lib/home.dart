@@ -28,7 +28,8 @@ class _HomeState extends State<Home> {
               ),
               Text("welcom to littile drop, where"),
               Text("You mange you daily tasks"),
-                Text("welcom to littile drop, where"),
+              Text("welcom to littile drop, where"),
+              Text("You mange you daily tasks"),
               SizedBox(height: 70),
               SizedBox(
                 width: 200,
