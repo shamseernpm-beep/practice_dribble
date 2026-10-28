@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_drible/splash.dart';
 
 import 'home.dart';
 
@@ -18,7 +19,7 @@ class _DribbleState extends State<Dribble> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Dribble",
-      home: Home(),
+      home: Splash(),
       theme: ThemeData(primaryColor: Colors.white),
       debugShowCheckedModeBanner: false,
     );
