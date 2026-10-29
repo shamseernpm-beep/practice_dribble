@@ -1,26 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:practice_drible/splash.dart';
 
-import 'home.dart';
+import 'splash.dart';
 
 void main() {
-  runApp(Dribble());
+  runApp(MyApp());
 }
 
-class Dribble extends StatefulWidget {
-  const Dribble({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  @override
-  State<Dribble> createState() => _DribbleState();
-}
-
-class _DribbleState extends State<Dribble> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Dribble",
+      title: "My app",
       home: Splash(),
-      theme: ThemeData(primaryColor: Colors.white),
       debugShowCheckedModeBanner: false,
     );
   }

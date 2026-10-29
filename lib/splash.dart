@@ -25,11 +25,9 @@ class _SplashState extends State<Splash> {
   Future<void> check() async {
     final save = await SharedPreferences.getInstance();
 
-    final islogined = save.getBool('login') ?? false;
-
+    final isLogged = save.getBool("logged") ?? false;
     if (!mounted) return;
-
-    if (islogined) {
+    if (isLogged) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => Home()),
@@ -44,6 +42,6 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.black, body: Column());
+    return Scaffold(backgroundColor: Colors.yellow);
   }
 }
